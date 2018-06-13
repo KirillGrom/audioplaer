@@ -1,4 +1,4 @@
-@font-face { 
+@font-face {
     font-family: "proxiSemibold";
     src: url(../font/proxiSemibold/proximanova-semibold.eot) format("eot"), 
          url(../font/proxiSemibold/proximanova-semibold.woff) format("woff"), 
@@ -45,7 +45,8 @@ button{
     margin: 30px auto auto auto;
 }
 
-.playlist{ 
+.playlist{
+    position:relative;
     grid-column-start:1;
     grid-column-end:2;
     grid-row-start:1;
@@ -80,16 +81,31 @@ button{
 }
 .scroll{
     width: 196px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .scroll__wrapp{
+    position:relative;
     width: 201px;
-    height: 550px;
+    height: 561px;
     overflow-y: scroll;
 }
 .scroll__wrapp::-webkit-scrollbar {
     width: 0;
 }
+.scroll-bar{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:5px;
+    height:561px;
+    background-color:#30383f;
+    }
+.scroll-bar__track {
+    background-color: rgb(37, 44, 51);
+    width: inherit;
+    height: 413px;
+    }
+
 .playlist__list{
     align-self: start;
     display: flex;
@@ -98,6 +114,7 @@ button{
    
 }
 .playlist__item{
+    position: relative;
     display: flex;
     align-items: center;
     min-width: 100%;
@@ -107,24 +124,37 @@ button{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    cursor: pointer
+    cursor:pointer;
+    border-bottom:1px solid #3e4651;
+    transition:all .3s;
 }
+.playlist__item:hover {
+    background-color: rgba(210, 74, 67,0.2);
+    }
+.playlist__item::before{
+    content: '';
+    position:absolute;
+    position: absolute;
+    top:0;
+    left: 0;
+    width:2px;
+    height:inherit;
+    background-color:#2b3038;
+    }
 .playlist__item--active{
     transition: all .3s;
-    position: relative;
+
     background-color: rgba(210, 74, 67,0.2);
 }
 .playlist__item--active::before{
     content: '';
-    position: absolute;
-    top:0;
-    left: 0;
     width: 15px;
     height: inherit;
     display: block;
     background-image: url("../img/icon-10.svg");
     background-repeat: no-repeat;
     background-position: left top;
+    background-color:transparent;
 }
 
   
