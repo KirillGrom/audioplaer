@@ -6,7 +6,7 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist/js'),
-        publicPath: 'dist/'
+        publicPath: 'dist'
     },
     module: {
         rules: [
@@ -16,11 +16,6 @@ module.exports = {
                 use: {
                     loader: "babel-loader"
                 }
-            },
-            {
-                test: /\.js$/,
-                use: ["source-map-loader"],
-                enforce: "pre"
             }
         ]
     }

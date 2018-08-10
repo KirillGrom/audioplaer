@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "dist/";
+/******/ 	__webpack_require__.p = "dist";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar scrollBR = function scrollBR() {\n  setTimeout(function () {\n    alert('goode');\n  }, 3000);\n};\nscrollBR();\n\nconsole.log(\"BABEL JSBABEL JS\");\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("\n\n// const scrollBR = ()=>{\n//     setTimeout(()=> {\n//         alert('goode');\n// },3000);\n// }\n// scrollBR();\n\n\nconsole.log(\"BABEL JSBABEL JS\");console.log(\"BABEL JSBABEL JS\");console.log(\"BABEL JSBABEL JS\");\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 

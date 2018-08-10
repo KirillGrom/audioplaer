@@ -1,10 +1,7 @@
- // const scrollBR = ()=>{
- //     setTimeout(()=> {
- //         alert('goode');
- // },3000);
- // }
- // scrollBR();
+'use strict'
+  import {carusel} from './carusel/carusel.js';  
 
+document.addEventListener("DOMContentLoaded", function(event) {
+  
 
-
-console.log("BABEL JSBABEL JS")
+}); 

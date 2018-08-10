@@ -85,6 +85,7 @@ button{
 }
 .scroll__wrapp{
     position:relative;
+    display: flex;
     width: 201px;
     height: 561px;
     overflow-y: scroll;
@@ -93,6 +94,7 @@ button{
     width: 0;
 }
 .scroll-bar{
+   
     position:absolute;
     right:0;
     bottom:0;
@@ -107,6 +109,7 @@ button{
     }
 
 .playlist__list{
+    min-width: 100%;
     align-self: start;
     display: flex;
     flex-wrap: wrap;
