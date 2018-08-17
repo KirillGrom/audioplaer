@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "  webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "devgit":"webpack --mode development"
+    "devgit": "webpack --mode development"
   },
   "author": "",
   "license": "ISC",

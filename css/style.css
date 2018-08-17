@@ -89,6 +89,7 @@ button{
     width: 201px;
     height: 561px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 .scroll__wrapp::-webkit-scrollbar {
     width: 0;
@@ -111,10 +112,13 @@ button{
 .playlist__list{
     min-width: 100%;
     align-self: start;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
    
+}
+.playlist__list--active{
+    display: flex;
 }
 .playlist__item{
     position: relative;
