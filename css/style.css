@@ -58,6 +58,7 @@ button{
     align-items: center;
     justify-content: center;
     height: 40px;
+    padding: 0 15px;
     font-family: "proxiRegular";
     background-color: rgb(210, 74, 67);
 }
@@ -66,6 +67,16 @@ button{
 .playlist__btn {
     padding-top: 4px;
 }
+
+.playlist__btn--prev{
+    margin-right: auto;
+}
+
+.playlist__btn--next{
+    margin-left: auto;
+}
+
+
 .playlist__btn svg{
     width: 9px;
     height: 12px;
@@ -75,9 +86,16 @@ button{
 .playlist__btn svg:hover{
     fill: #d24a43;
 }
+.playlist__name-list{
+    display: inline-block;
+}
 .playlist__name {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+}
+.playlist__name--active{
     display: block;
-    margin: 0 45px;
 }
 .scroll{
     width: 196px;
@@ -88,10 +106,10 @@ button{
     display: flex;
     width: 201px;
     height: 561px;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
     overflow-x: hidden;
 }
-.scroll__wrapp::-webkit-scrollbar {
+.playlist__list::-webkit-scrollbar {
     width: 0;
 }
 .scroll-bar{
@@ -103,23 +121,40 @@ button{
     height:561px;
     background-color:#30383f;
     }
+
 .scroll-bar__track {
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: rgb(37, 44, 51);
     width: inherit;
     height: 413px;
+    transition: all .4s ;
+    border-radius: 3px;
     }
-
+.scroll-bar__track:hover {
+    cursor: pointer;
+    background-color: #d24a43;
+}
 .playlist__list{
     min-width: 100%;
+    height: 100%;
     align-self: start;
     display: none;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-y: scroll;
+
    
 }
 .playlist__list--active{
     display: flex;
+
 }
+
+
+
+
 .playlist__item{
     position: relative;
     display: flex;
