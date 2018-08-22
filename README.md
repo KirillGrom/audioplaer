@@ -1,3 +1,3 @@
 # audioplaer
 audioplaer
-https://kirillgrom.github.io/audioplaer/
+https://kirillgrom.github.io/audioplayer/
