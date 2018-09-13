@@ -13,8 +13,6 @@ export const scroll = ()=>{
             sctollTrack.style.height =scrollBar.clientHeight * listActive.clientHeight / listActive.scrollHeight +"px";
 
             sctollTrack.style.top = scrollBar.clientHeight * listActive.scrollTop / listActive.scrollHeight +"px";
-            console.log(sctollTrack.style.height)
-
         });
     });
 
@@ -24,12 +22,13 @@ export const scroll = ()=>{
         item.dispatchEvent(event);
     });
     sctollTrack.addEventListener('mousedown',function (start) {
+
         start.preventDefault();
         let offset = sctollTrack.offsetTop;
         const onMove =(end)=>{
             let listActive = document.querySelector('.playlist__list--active');
             let delta = end.pageY-start.pageY;
-            console.log(delta);
+
             sctollTrack.style.bacgroundColor ="#d24a43";
             sctollTrack.style.top =Math.min(scrollBar.clientHeight-sctollTrack.clientHeight,Math.max(0,offset+delta))+"px";
             sctollTrack.scrollTop=listElem.clientHeight+sctollTrack.offsetTop/scrollBar.clientHeight;
