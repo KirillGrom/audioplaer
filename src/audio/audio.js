@@ -98,7 +98,7 @@ export const audioPlayer =()=>{
 
     };
     const songsOfSearch = (arrySong,src)=>{
-        src = src.split("/").slice(5).join("/");
+        src = src.split("/").slice(4).join("/");
 
 
 
