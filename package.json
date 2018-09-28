@@ -6,8 +6,9 @@
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
-    "webpack": "^4.10.2",
     "babel-preset-env": "^1.7.0",
+    "handlebars-loader": "^1.7.0",
+    "webpack": "^4.10.2",
     "webpack-dev-server": "^3.1.4"
   },
   "devDependencies": {

@@ -68,28 +68,4 @@ export const eventClick = () => {
 
     });
 
-    buttonRepeat.addEventListener('click', (evt) => {
-
-
-        makeButtonActive(evt.currentTarget)
-
-    });
-    buttonRandom.addEventListener('click', (evt) => {
-
-
-        makeButtonActive(evt.currentTarget)
-
-    });
-
-
-const makeButtonActive =(evt)=>{
-    const target = evt;
-    if (!target.classList.contains('active')) {
-        target.classList.add('active');
-    }
-    else {
-        target.classList.remove('active');
-    }
-}
-
 };
