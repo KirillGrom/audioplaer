@@ -1,0 +1,71 @@
+
+{
+    "playlistOne":[
+        {
+            "title": "_Save_Me",
+            "authorName": "XXXTENTACION_",
+            "formatMusic":"mp3",
+            "srcMusic":"music/XXXTENTACION_-_Save_Me.mp3"
+        },
+        {
+            "title": "Billy",
+            "authorName": "6IX9INE",
+            "formatMusic":"mp3",
+            "srcMusic":"music/6IX9INE-Billy.mp3"
+        },
+        {
+            "title": "Dirt",
+            "authorName": "BONES",
+            "formatMusic":"mp3",
+            "srcMusic":"music/BONES-Dirt.mp3"
+        },
+        {
+            "title": "Awful_Things_ft.Lil_Tracy",
+            "authorName": "Lil_PEEP",
+            "formatMusic":"mp3",
+            "srcMusic":"music/Lil_PEEP-Awful_Things_ft.Lil_Tracy.mp3"
+        },
+        {
+            "title": "NightShift",
+            "authorName": "BONES",
+            "formatMusic":"mp3",
+            "srcMusic":"music/BONES-NightShift.mp3"
+        }
+
+],
+    "playlistSecond":[
+        {
+            "title": "U_Said",
+            "authorName": "Lil_Peep",
+            "formatMusic":"mp3",
+            "srcMusic":"music/Lil_Peep-U_Said.mp3"
+        },
+        {
+            "title": "numb",
+            "authorName": "xxxtentacion",
+            "formatMusic":"mp3",
+            "srcMusic":"music/xxxtentacion-numb.mp3"
+        },
+        {
+            "title": "Denzel",
+            "authorName": "Curry_Heartless",
+            "formatMusic":"mp3",
+            "srcMusic":"music/Curry_Heartless-Denzel.mp3"
+        },
+        {
+            "title": "Heathen(feat. Eddy Baker)",
+            "authorName": "BONES",
+            "formatMusic":"mp3",
+            "srcMusic":"music/BONES-Heathen-feat.Eddy_Baker.mp3"
+        },
+        {
+            "title": "_kooda",
+            "authorName": "6ix9ine_",
+            "formatMusic":"mp3",
+            "srcMusic":"music/6ix9ine_-_kooda.mp3"
+        }
+    ]
+
+}
+
+

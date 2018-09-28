@@ -139,7 +139,7 @@ button{
 .playlist__list{
     min-width: 100%;
     height: 100%;
-    align-self: start;
+    align-content: start;
     display: none;
     flex-wrap: wrap;
     justify-content: center;
